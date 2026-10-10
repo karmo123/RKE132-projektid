@@ -1,0 +1,22 @@
+from utils import clean_my_list
+import random
+
+
+def read_data(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        data = clean_my_list(f.readlines())
+        random_item = random.choice(data)
+
+        return random_item
+
+    from read_from_file import read_data
+
+
+hero = read_data(r"data\heroes.txt")
+villain = read_data(r"data\villains.txt")
+
+hero_weapon = read_data(r"data\weapons.txt")
+villain_weapon = read_data(r"data\weapons.txt")
+
+print(hero)
+print(villain)
