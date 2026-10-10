@@ -6,5 +6,5 @@ for i in range(1, 6):
     print(i)
 
 # Kirjutage programm, mis kuvab konsoolis arvud viiest üheni (tagurpidi).
-for i in range(5, 1, -1):
+for i in range(5, 0, -1):
     print(i)
