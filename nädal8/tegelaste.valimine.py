@@ -10,13 +10,3 @@ def read_data(file_path):
         return random_item
 
     from read_from_file import read_data
-
-
-hero = read_data(r"data\heroes.txt")
-villain = read_data(r"data\villains.txt")
-
-hero_weapon = read_data(r"data\weapons.txt")
-villain_weapon = read_data(r"data\weapons.txt")
-
-print(hero)
-print(villain)
