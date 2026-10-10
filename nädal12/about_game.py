@@ -1,3 +1,4 @@
+import sqlite3
 def search_games(keyword):
 
     with sqlite3.connect("db/TopGamesDB.db") as connection:
