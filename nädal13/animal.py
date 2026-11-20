@@ -27,6 +27,14 @@ class Cat(Animal):
 
     def hiss(self):
         print(f"{self.name}: Hissss!")
+    
+    def cat_sees(self, other):
+        super().sees(other)
+
+        if isinstance(other, Dog):
+            self.hiss()
+        else:
+            self.meow()
 
 
 class Dog(Animal):
